@@ -3,55 +3,59 @@
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Project 2</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Fullscreen Slit Slider with CSS3 and jQuery" />
-		<meta name="author" content="Codrops" />
-		<meta name="author" content="JoJo Yang" />
-		
-		<!--CSS Style Sheets-->
-		<!--transition--><link rel="stylesheet" type="text/css" href="css/slidetransition.css" />
-        <!--custom styles--><link rel="stylesheet" type="text/css" href="css/custom.css" />
-		<!--fonts--><link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
-    </head>
-	
-    <body>
+        <meta name="author" content="Codrops" />
+        <meta name="author" content="JoJo Yang" />
+        <title>Climate Change</title>
+		<link rel="icon" src="images/icon.png">
+        
+		<!-------------CSS--------------->
+		<!--transition--> <link rel="stylesheet" type="text/css" href="css/slidetransition.css" />
+        <!--custom style--> <link rel="stylesheet" type="text/css" href="css/custom.css" />
+        <!--fonts--> <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+	</head>
+    
+	<body>
+		<!--fullscreen plug-in adapted from https://tympanus.net/Tutorials/FullscreenSlitSlider/-->
+		<!-------------slide wrapper--------------->
         <div class="container fullpage">
             
-			<!-- Header -->
+			<!-------------header--------------->
             <div class="codrops-top clearfix">
-                <a href="www.brojust.com">
-                <strong>&laquo; JoJo Yang </strong>487 Project 2
+                <a href="#">
+					<strong>&laquo; JoJo Yang </strong> 487 Project 2
                 </a>
-                <div class="clr"></div>
+				<div class="clr"></div>
             </div>
-            <!--/Header -->
+            <!-------------/header--------------->
 			
-			<!--Page Slides-->
+           <!-------------slides--------------->
             <div id="slider" class="sl-slider-wrapper">
                 <div class="sl-slider">
-					
-					<!--Slide 1 Pandas-->
+                    
+					<!-------------slide 1 panda--------------->
                     <div class="sl-slide bg-1" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
                         <div class="sl-slide-inner">
-							
-							<!--css animation-->
-                            <img class="bamboo-animation" src="images/bamboo.png" />
-                            
-							<div class="deco" data-icon="H"></div>
+                            <!--css animation-->
+							<!--animation adopted from https://www.tutorialspoint.com/css/css_animation_swing.htm-->
+                            <img class="bamboo-animation" src="images/bamboo.png">
+                            <div class="deco" data-icon="H"></div>
                             <h2>Giant Pandas</h2>
                             <blockquote>
-                                <p>Giant panda populations are found in south-central China; primarily in Gansu, Shaanxi, and Sichuan province. Not only have human activities such as agriculture and infrastructure developments changed the climate, but it also forced Giant Pandas to migrate to higher elevations where bamboo, a plant that makes up 90% of a panda’s diet, are less likely to grow. Giant pandas’ long generation time, low productivity rate, and lack of food source would limit the specie’s ability to adapt to climate change. </p>
+                                <p>Giant panda populations are found in south-central China; primarily in Gansu, Shaanxi, and Sichuan province. Not only have human activities such as agriculture and infrastructure developments changed the climate, but it also forced Giant Pandas to migrate to higher elevations where bamboo, a plant that makes up 90% of a panda’s diet, are less likely to grow. Giant pandas’ long generation time, low productivity rate, and lack of food source would limit the specie’s ability to adapt to climate change.</p>
                                 <cite>world wildlife</cite>
                             </blockquote>
                         </div>
                     </div>
+                    <!-------------/slide 1--------------->
 					
-					<!--Slide 2 Corals-->
+                    <!-------------slide 2 coral--------------->
                     <div class="sl-slide bg-2" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
                         <div class="sl-slide-inner">
-							
-							<!--css animation-->
+                            
+							<!--css animation bubbles-->
+							<!--animation adapted from https://codepen.io/Mark_Bowley/pen/mEtqj-->
                             <div id="bubbles">
                                 <div class="bubble x1"></div>
                                 <div class="bubble x2"></div>
@@ -64,8 +68,9 @@
                                 <div class="bubble x9"></div>
                                 <div class="bubble x10"></div>
                             </div>
-                           
-							<div class="deco" data-icon="q"></div>
+                            <!--/css animation-->
+							
+                            <div class="deco" data-icon="q"></div>
                             <h2>Coral Bleaching</h2>
                             <blockquote>
                                 <p>Corals rely on their symbiotic relationship with a type of algae called zooxanthellae to survive. The algae is a food source and also gives the coral its vibrant color. As a result of rising sea temperature, the algae would leave the coral, leaving the coral colorless, fragile, and prone to diseases.</p>
@@ -73,15 +78,12 @@
                             </blockquote>
                         </div>
                     </div>
+                    <!-------------/slide 2--------------->
 					
-					<!--Slide 3 Polar bears-->
+                    <!-------------slide 3 polar bears--------------->
                     <div class="sl-slide bg-3" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
                         <div class="sl-slide-inner">
                             <div class="deco" data-icon="O"></div>
-							
-							<!--css animation-->
-							<img src="images/ice.png" id="ice">
-							
                             <h2>Polar Bears</h2>
                             <blockquote>
                                 <p>Polar bears rely heavily on the sea ice environment in the Arctic region for traveling, hunting, mating, and resting. However, substantial global warming in the Arctic over the last 50 years has caused the polar bear to lose their living habitat. Arctic sea ice reaches its minimum extent in September of each year. The ice area has declined 13.4% per decade from 1979 through 2015; meaning that the ice could completely disappear during the month of September by mid-century.</p>
@@ -89,114 +91,144 @@
                             </blockquote>
                         </div>
                     </div>
+                    <!-------------/slide 3--------------->
+                    
+					<!-------------slide 4 polar bear video--------------->
+                    <div class="sl-slide bg-3-2" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+                        <div class="sl-slide-inner">
+                            <div class="deco" data-icon="O"></div>
+                            <h2>The Polar Bear's Story</h2>
+                            <blockquote>
+                                <br>
+                                <div>
+                                    <iframe src="https://www.youtube.com/embed/_zI4MG9qrHc?vq=hd1080&showinfo=0&rel=0&theme=light&color=white" width="640" height="360" class="responsive-iframe" allowfullscreen="allowfullscreen"></iframe>
+                                </div>
+                                <cite>YouTube @EasiAsPi</cite>
+                            </blockquote>
+                        </div>
+                    </div>
+					<!-------------/slide 4--------------->
 					
-					<!--Slide 4 Rainforest-->
+                   <!-------------slide 5 rainforest--------------->
                     <div class="sl-slide bg-4" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
                         <div class="sl-slide-inner">
                             <div class="deco" data-icon="I"></div>
-							
+                            
 							<!--css animation-->
+							<!--animation adapted from http://css3.bradshawenterprises.com/cfimg/-->
                             <div id="fade-background">
                                 <img class="bottom" src="images/rainforest2.png"> <!--after image-->
                                 <img class="top" src="images/rainforest.png"> <!--before image-->
                             </div>
-							
-                            <h2>Amazon Rainforest</h2>
+                            <!--css animation-->
+                           
+							<h2>Amazon Rainforest</h2>
                             <blockquote>
                                 <p>Deforestation and flooding in the Amazon Rainforest has altered the regional climate and displaced thousands of animals. Along with human activities and rising sea levels, wildfire is also destroying the once-beautiful land. In 2019, Brazil's National Institute for Space Research (INPE) recorded more than 70,000 wildfires between Jan. 1 and Aug. 20, 2019. That is an 85% increase compared with the same period in 2018.</p>
                                 <cite>National Geographic & Mongabay</cite>
                             </blockquote>
                         </div>
                     </div>
-					
-					<!--Slide 5 Madagascar-->
+                    <!-------------/slide 5-------------->
+                    
+					<!-------------slide 6 madagascar--------------->
                     <div class="sl-slide bg-5" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
                         <div class="sl-slide-inner">
                             <div class="deco" data-icon="I"></div>
-							
+                            
 							<!--css animation-->
-							<img src="images/water.png" id="water">
-							
-                            <h2>Madagascar</h2>
+							<!--animation adapted from https://stackoverflow.com/questions/16797187/css-animation-moving-an-image-up-the-screen-with-keyframes-->
+                            <img src="images/water.png" id="water">
+                            <!--/css animation-->
+                           
+							<h2>Madagascar</h2>
                             <blockquote>
                                 <p>Madagascar is home to diverse and unique biodiversity, but it is also one of Africa's poorest countries. The human population in Madagascar relies largely on farming and fishing. However, Madagascar is commonly experiencing powerful cyclones that damage ecosystems and infrastructure, and climate change has increased the number and severity of extreme weather conditions. The extreme weather pattern destroys Madagascar's unique biodiversity and puts a burden on Madagascar's human population.</p>
                                 <cite>USAID</cite>
                             </blockquote>
                         </div>
                     </div>
+                     <!-------------/slide 6-------------->
 					
-					<!--Slide 6 Quiz-->
+                    <!-------------slide 7 quiz--------------->
                     <div class="sl-slide bg-6" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
                         <div class="sl-slide-inner gradient">
                             <div class="deco" data-icon="9"></div>
                             <h2>Take a quiz</h2>
                             <blockquote>
-								
-								<!--start button-->
-                                <cite><a href="#" id="quiz-start-btn" class="quiz-button"><span>Start</span></a></cite>
-								<!--quiz-->
-                                <div id="quiz"></div>
+                                <!--start button-->
+								<!--quiz plug-in by https://github.com/jchamill/jquery-quiz-->
+                                <cite><a href="#" id="quiz-start-btn" class="quiz-button"><span class="start">Start</span></a></cite>
+                                <!--quiz-->
+                                <div id="quiz" class="quiz-responsive"></div>
                             </blockquote>
                         </div>
                     </div>
+                    <!-------------/slide 7-------------->
 					
-					<!--Slide 7 Credit-->
-					<div class="sl-slide bg-7" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
+                    <!-------------slide 8 credit--------------->
+                    <div class="sl-slide bg-7" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
                         <div class="sl-slide-inner">
                             <div class="deco" data-icon="e"></div>
                             <h2>Credits</h2>
                             <blockquote>
                                 <p class="credit">The content of this website is adopted from project designed by Amy Metzinger and JoJo Yang in MEJO 484 (Information Graphics) class of Spring 2020. To see the full inforgraphic booklet, visit <a href="https://issuu.com/wesleymorganh/docs/484_final_climatechange_prev2" class="issuu">issuu.com.</a>
                                 </p>
-								<div class="space"></div>
-							<div id="ca-2" class="collapsable collapsable-slide">
-									<h3 id="citation" class="ca-control">SITE SOURCES</h3>
-									<div class="ca-box">
-										<ul>
-											<li><a href="https://c402277.ssl.cf1.rackcdn.com/publications/992/files/original/WWF_Giant_Panda_climate_assessment_web.pdf?1488211328"> Giant Panda | World Wildlife</a></li>
-											<li><a href="https://oceanservice.noaa.gov/facts/coral_bleach.html#:~:text=When%20water%20is%20too%20warm,and%20are%20subject%20to%20mortality">Coral Bleaching | NOAA</a></li>
-											<li><a href="https://nsidc.org/greenland-today/"> Polar Bear | NSIDC </a></li>
-											<li><a href="https://www.worldwildlife.org/pages/polar-bears-and-climate-change"> Polar Bear | World Wildlife</a></li>
-											<li><a href="https://www.nationalgeographic.com/environment/2019/08/amazon-fires-cause-deforestation-graphic-map/"> Amazon Rainforest | National Geographic</a></li>
-											<li><a href="https://news.mongabay.com/2019/09/fires-in-brazils-amazon-have-devastating-consequences/">Amazon Rainforest | Mongabay</a></li>
-											<li><a href="https://nsidc.org/greenland-today/"> Polar Bear | NSIDC </a></li>
-											<li><a href="https://www.usaid.gov/madagascar/environment"> Madagascar | USAID </a></li>
-										</ul>
-									</div>
-								</div>
-							</blockquote>
+                                <div class="space"></div>
+								<!--collapse plug-in adapted from https://www.jqueryscript.net/demo/Lightweight-jQuery-Collapse-Control-Plugin-Collapsable/-->
+                                <div id="ca-2" class="collapsable collapsable-slide">
+                                    <h3 id="citation" class="ca-control">REFERENCES</h3>
+                                    <div class="ca-box">
+                                        <ul>
+                                            <li><a href="https://c402277.ssl.cf1.rackcdn.com/publications/992/files/original/WWF_Giant_Panda_climate_assessment_web.pdf?1488211328"> Giant Panda <i class="reference">World Wildlife</i></a></li>
+                                            <li><a href="https://oceanservice.noaa.gov/facts/coral_bleach.html#:~:text=When%20water%20is%20too%20warm,and%20are%20subject%20to%20mortality">Coral Bleaching <i class="reference">NOAA</i></a></li>
+                                            <li><a href="https://nsidc.org/greenland-today/"> Polar Bear <i class="reference">NSIDC</i></a></li>
+                                            <li><a href="https://www.worldwildlife.org/pages/polar-bears-and-climate-change"> Polar Bear <i class="reference">World Wildlife</i></a></li>
+                                            <li><a href="https://www.youtube.com/watch?v=_zI4MG9qrHc&t=4s"> The Polar Bear's Story Video<i class="reference"> @EasiAsPi</i></a></li>
+                                            <li><a href="https://www.nationalgeographic.com/environment/2019/08/amazon-fires-cause-deforestation-graphic-map/"> Amazon Rainforest <i class="reference">National Geographic</i></a></li>
+                                            <li><a href="https://news.mongabay.com/2019/09/fires-in-brazils-amazon-have-devastating-consequences/">Amazon Rainforest <i class="reference">Mongabay</i></a></li>
+                                            <li><a href="https://www.usaid.gov/madagascar/environment"> Madagascar <i class="reference">USAID</i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </blockquote>
                         </div>
                     </div>
+                    <!-------------/slide 8-------------->
                 </div>
-				<!--end of slides-->
+                <!-------------/slides-------------->
 				
-				<!--arrows-->
+                <!-------------arrow-------------->
                 <nav id="nav-arrows" class="nav-arrows">
                     <span class="nav-arrow-prev"></span>
                     <span class="nav-arrow-next"></span>
                 </nav>
+                <!-------------/arrow-------------->
 				
-				<!--dots-->
+				<!-------------dots-------------->
                 <nav id="nav-dots" class="nav-dots">
                     <span class="nav-dot-current"></span>
                     <span></span>
                     <span></span>
                     <span></span>
                     <span></span>
-					<span></span>
-					<span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </nav>
-			</div>
-            <!-- /slider-wrapper -->
+				<!-------------/dots-------------->
+				
+            </div>
+            <!-------------slide wrapper-------------->
         </div>
 		
-		<!--JS-->
-        <!--jquery--><script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-        <!--slides--><script src="js/modernizr.custom.79639.js"></script>
-		<script src="js/jquery.collapsable.js"></script>
-        <!--slides--><script src="js/jquery.ba-cond.min.js"></script>
-        <!--slides--><script src="js/jquery.slitslider.js"></script>
-        <!--quiz--><script src="js/jquery.quiz-min.js"></script>
+        <!--JS-->
+        <!--jquery--> <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+        <!--slides--> <script src="js/modernizr.custom.79639.js"></script> <!--from https://tympanus.net/Tutorials/FullscreenSlitSlider/-->
+				  <script src="js/jquery.ba-cond.min.js"></script>
+           		  <script src="js/jquery.slitslider.js"></script> 
+		<!--collapse reference--> <script src="js/jquery.collapsable.js"></script> <!--from https://www.jqueryscript.net/demo/Lightweight-jQuery-Collapse-Control-Plugin-Collapsable/-->
+        <!--quiz--><script src="js/jquery.quiz-min.js"></script> <!--from https://github.com/jchamill/jquery-quiz-->
         <!--main.js--><script src="js/main.js"></script>
     </body>
 </html>

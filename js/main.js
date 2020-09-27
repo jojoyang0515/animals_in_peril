@@ -54,10 +54,10 @@ $('#quiz').quiz({
 		{
             'q': 'Giant pandas are found in what part of China?',
             'options': [
-                'South-central China',
-                'Northern China',
-                'Central China',
-                'Eastern China'
+                'South-central China.',
+                'Northern China.',
+                'Central China.',
+                'Eastern China.'
             ],
             'correctIndex': 0,
             'correctResponse': 'Yes! Giant pandas are found in south-central China in Gansu, Shanxi and Sichuan Provinces.',
@@ -68,10 +68,10 @@ $('#quiz').quiz({
         {
             'q': 'What effects does rising sea temperature have on corals?',
             'options': [
-                'Cause corals to dry up and shrink',
-                'Cause algaes to leave corals, leaving corals colorless and fragile',
-                'Cause the fish populations that live near corals to move away',
-                'Cause the coral to evolve into moving organisms'
+                'Cause corals to dry up and shrink.',
+                'Cause algaes to leave corals, leaving corals colorless and fragile.',
+                'Cause the fish populations that live near corals to move away.',
+                'Cause the coral to evolve into moving organisms.'
             ],
             'correctIndex': 1,
             'correctResponse': 'Correct! Rising sea tempertaure cause corals to expel the algae that lives in their tissues, leaving the corals colorless and fragile.',
@@ -82,10 +82,10 @@ $('#quiz').quiz({
         {
             'q': 'Where do polar bears live?',
             'options': [
-                'Coca-Cola Headquarter',
-                'Tropical Region',
-                'Antarctica',
-                'Artic Region'
+                'Coca-Cola Headquarter.',
+                'Tropical Region.',
+                'Antarctica.',
+                'Artic Region.'
             ],
             'correctIndex': 3,
             'correctResponse': 'Yes! As of 2015, there are around 22,000 to 31,000 individuals found in 19 subpopulations in the Artics.',
@@ -110,13 +110,13 @@ $('#quiz').quiz({
         {
             'q': 'What is one weather condition that regularly affects Madagascar?',
             'options': [
-                'Tornados',
-                'Cyclones',
-                'Earthquakes',
-                'Droughts'
+                'Tornados.',
+                'Cyclones.',
+                'Earthquakes.',
+                'Droughts.'
             ],
             'correctIndex': 1,
-            'correctResponse': 'Right. Madagascar is a country that regularly experience powerful cyclone that affects its ecosystems and the human population',
+            'correctResponse': 'Right. Madagascar is a country that regularly experience powerful cyclone that affects its ecosystems and the human population.',
             'incorrectResponse': 'Madagascar is regularly affected by powerful cyclones.'
         }
     ]
@@ -134,11 +134,18 @@ $('.collapsable-slide').collapsable({
   fxDuration: 300
 });
 
-/*$(document).ready(function() {
+$(document).ready(function() {
 	$("#quiz-start-btn").click(function() {
         $(this).hide();
     });
 });
+
+$(document).ready(function() {
+	$("#citation").click(function() {
+        $(this).hide();
+    });
+});
+
 var _gaq = _gaq || [];
 _gaq.push(['_setAccount', 'UA-36251023-1']);
 _gaq.push(['_setDomainName', 'jqueryscript.net']);
@@ -151,4 +158,4 @@ _gaq.push(['_trackPageview']);
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(ga, s);
-})();*/
+})();
