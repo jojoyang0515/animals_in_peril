@@ -1,6 +1,9 @@
+/*jslint browser: true*/
+
 //slide jquery plugin
-$(function() {
-    var Page = (function() {
+$(function(){
+    var Page = (function(){
+		'use strict';
         var $navArrows = $('#nav-arrows'),
             $nav = $('#nav-dots > span'),
             slitslider = $('#slider').slitslider({
@@ -8,7 +11,7 @@ $(function() {
                     $nav.removeClass('nav-dot-current');
                     $nav.eq(pos).addClass('nav-dot-current');
                 }
-            }),
+			}),
 			
             init = function() {
                 initEvents();

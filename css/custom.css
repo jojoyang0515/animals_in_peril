@@ -146,7 +146,7 @@ a {
     top: 50%;
     width: 20px;
     height: 20px;
-    border: 4px solid #ffffff;
+    border: 4px solid #fff;
     margin-top: -40px;
     transform: rotate(45deg);
 }
@@ -522,7 +522,7 @@ a {
 }
 
 iframe {
-    border: 5px solid #ffffff;
+    border: 5px solid #fff;
     border-radius: 5px;
 }
 
@@ -663,11 +663,11 @@ iframe {
     max-width: 80%;
 }*/
 
-//*question*/
+/*question*/
 .question {
     margin-bottom: 10px;
     margin-top: 10px;
-    font-size: 200px;
+    font-size: 15px;
     height: 50px;
 }
 
@@ -681,7 +681,7 @@ iframe {
     padding: 0.5em 1em;
     margin-bottom: 0.5em;
     margin-top: 10px;
-    color: #ffffff;
+    color: #fff;
     background: rgb(255, 255, 255, 0.2)
 }
 
@@ -716,7 +716,7 @@ iframe {
 
 #quiz-buttons a {
     background: #658da7;
-    color: #ffffff;
+    color: #fff;
 }
 
 /* Quiz State Overrides */
@@ -728,7 +728,7 @@ iframe {
 /*restart button*/
 .quiz-results-state #quiz-buttons a {
     background: #658da7;
-    color: #ffffff;
+    color: #fff;
 }
 
 /******slide 7******/
@@ -955,7 +955,7 @@ li a {
     .fullpage .bg-8 h2 {
         font-size: 25px;
         letter-spacing: 4px;
-        color: #ffffff;
+        color: #fff;
     }
 	
 	.fullpage .bg-1 p,
@@ -970,7 +970,7 @@ li a {
 	 .fullpage .bg-2 p,
     .fullpage .bg-3 p,
     .fullpage .bg-8 p {
-        background-color: rgb(126, 207, 228, 0.8);
+        background-color: rgb(69, 125, 143, 0.8);
         border-radius: 10px;
         font-size: 15px;
         padding: 10px;
@@ -989,22 +989,21 @@ li a {
     }
 	
     .responsive-iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+        position: relative;
+        width: 400px;
+        height: 225px;
         border: 0;
-        border: 15px solid #ffffff;
+        border: 5px solid #fff;
         border-radius: 3px;
-    }
+		bottom: 250px;
+	}
 	
 	/*slide 5*/
 	#fade-background {
         position: absolute;
         margin: 0 auto;
         width: auto;
-        height: 100%;
+        height: 100%;                                                   
     }
 	
     #fade-background img {
